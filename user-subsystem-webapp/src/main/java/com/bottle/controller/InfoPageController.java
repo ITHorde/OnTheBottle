@@ -25,7 +25,6 @@ public class InfoPageController {
     @ResponseBody
     public InfoPageResponse getUserInfo(InfoPageRequest request) {
 
-//        User user = userRepository.getUserById(request.getId());
         User user = userRepository.findOne(request.getId());
 //        User user = userRepository.findOne(UUID.fromString("14dd28b2-1e7e-4575-9923-135c4fbf345b"));
         InfoPageResponse infoPageResponse = InfoPageResponse.builder()
@@ -37,7 +36,9 @@ public class InfoPageController {
                 .city(user.getCity())
                 .avatarUrl(user.getAvatarUrl())
                 .status(user.getStatus())
-                .info(user.getInfo()).build();
+                .info(user.getInfo())
+                .deleted(user.getDeleted())
+                .password(user.getPassword()).build();
 
         System.out.println("TestController: A name of the user is " + infoPageResponse.getName());
 

@@ -42,6 +42,7 @@ public class FindPersonController {
                     .avatarUrl(user.getAvatarUrl())
                     .city(user.getCity())
                     .country(user.getCountry())
+                    .deleted(user.getDeleted())
                     .build();
             dtoList.add(userDTO);
         }

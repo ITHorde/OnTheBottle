@@ -3,6 +3,7 @@ package com.bottle.chat.websocket;
 import com.bottle.chat.DTO.ChatNotificationDTO;
 import com.bottle.service.auth.AuthService;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -18,6 +19,7 @@ import java.util.UUID;
 @EnableScheduling
 @Getter
 @NoArgsConstructor
+@AllArgsConstructor
 public class SocketHandler extends TextWebSocketHandler {
 
     private WebSocketSession session;

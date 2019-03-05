@@ -22,4 +22,5 @@ public class EditProfileRequest {
     private String avatarUrl;
     private String status;
     private String info;
+    private String password;
 }

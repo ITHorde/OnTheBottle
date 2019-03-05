@@ -22,6 +22,7 @@
         <hibernate-entitymanager.version>5.2.3.Final</hibernate-entitymanager.version>
         <jjwt.version>0.9.0</jjwt.version>
         <org.apache.httpcomponents.version>4.5.5</org.apache.httpcomponents.version>
+        <demo.port>8443</demo.port>
     </properties>
 
     <dependencies>
@@ -53,6 +54,22 @@
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-validator</artifactId>
             <version>${hibernate.version}</version>
+        </dependency>
+
+        <!-- Kurento -->
+        <!--<dependency>-->
+            <!--<groupId>org.kurento</groupId>-->
+            <!--<artifactId>kurento-client</artifactId>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.kurento</groupId>
+            <artifactId>kurento-utils-js</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.kurento</groupId>
+            <artifactId>kurento-client</artifactId>
+            <version>6.7.1</version>
+            <scope>compile</scope>
         </dependency>
 
         <!-- Other -->
@@ -106,6 +123,10 @@
             <groupId>com.mchange</groupId>
             <artifactId>mchange-commons-java</artifactId>
             <version>0.2.11</version>
+        </dependency>
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
         </dependency>
     </dependencies>
     <build>

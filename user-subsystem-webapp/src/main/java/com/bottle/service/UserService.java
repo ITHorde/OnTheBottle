@@ -152,6 +152,7 @@ public class UserService {
         userDTO.setId( user.getId() );
         userDTO.setAvatarUrl( user.getAvatarUrl() );
         userDTO.setFriendStatus(user.getFriendStatus());
+        userDTO.setDeleted(user.getDeleted());
         return userDTO;
     }
 

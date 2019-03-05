@@ -20,4 +20,6 @@ public class InfoPageResponse {
     private String avatarUrl;
     private String status;
     private String info;
+    private boolean deleted;
+    private String password;
 }
